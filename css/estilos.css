@@ -79,6 +79,7 @@ h2{
     margin-bottom: 1% ;
     padding: 1%;
     font-size: 20px;
+    border-radius: 20px;
 }
 
 h3{
@@ -102,14 +103,22 @@ p{
 /*parte responsive*/
 
 @media screen and (max-width: 700px){
+    /*barra de navegacion*/
     ul.tabs li{
         width: none;
         flex-basis: 0;
         flex-grow: 1;
     }
+    /*coctacto de referencia*/
     ul.contac li a .contac-text{
         display: none;
-   
+    }
+    .consulte{
+        width: none;
+    }
+    .nc{
+        width: none
+    ;
     }
 }
 @media screen and (max-width: 450px){
@@ -126,7 +135,7 @@ p{
 
 /** css de contactos referencia*/
 .contac-reference{
-    width: 700px;
+    width: 750px;
     max-width: 90%;
     margin: 30px auto;
     background: #363636;
@@ -158,3 +167,22 @@ ul.contac li a{
     padding: 20px 0px;
 }
 
+/**pagina 1*/
+section.pag1 figure{
+    display: flex;
+    background-color: #d4d4d4;
+    padding: 1%;
+    border-radius: 20px;
+    font-family: sans-serif;
+    align-items: center;
+}
+.nombre{
+    background: none;
+    color: #363636;
+    align-items: center;
+}
+img{
+    border-radius: 20px;
+    padding: 2px;
+    background: black;
+}
