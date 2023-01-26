@@ -70,21 +70,33 @@ ul.tabs li a .tab-text{
 }
 
 /*css contenido*/
-h3{
+h2{
     color: white;
     text-decoration: none;
     background: #0984cc;
     padding: 2px;
     margin-top: 1%;
     margin-bottom: 1% ;
-    padding: 2%;
-
+    padding: 1%;
+    font-size: 20px;
 }
 
-p,h4{
+h3{
+    margin: 2%;
+    font-weight: none;
+    font-size: 20px;
+}
+h4{
+    margin: 1%;
+    font-size: 15px;
+}
+
+
+p{
     width: 100%; 
-    background: #e7e7e7;
-    padding-left: 1%;
+    background: #f5f1f1;
+    padding: 1%;
+
 }
 
 /*parte responsive*/
@@ -94,6 +106,10 @@ p,h4{
         width: none;
         flex-basis: 0;
         flex-grow: 1;
+    }
+    ul.contac li a .contac-text{
+        display: none;
+   
     }
 }
 @media screen and (max-width: 450px){
@@ -107,3 +123,38 @@ p,h4{
         padding: 20px;
     }
 }
+
+/** css de contactos referencia*/
+.contac-reference{
+    width: 700px;
+    max-width: 90%;
+    margin: 30px auto;
+    background: #363636;
+    padding: 1px;
+}
+
+ul.contac{
+    width: 100%;
+    background: #d4d4d4;
+    list-style: none;
+    display: flex;
+}
+ul.contac{
+   
+}
+
+ul.contac li{
+    width: 33%;
+}
+    
+
+ul.contac li a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    
+    display: block;
+    padding: 20px 0px;
+}
+
