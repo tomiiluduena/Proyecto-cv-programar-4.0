@@ -1,3 +1,4 @@
+/*css generales*/
 *{
     margin: 0%;
     padding: 0%;
@@ -11,10 +12,13 @@ body{
     font-family: "`open sans";
 }
 
+/*css barra de navegacion*/
+
 .wrap{
     width: 800px;
     max-width: 90%;
     margin: 30px auto;
+    
 }
 
 ul.tabs{
@@ -34,12 +38,14 @@ ul.tabs li:hover{
     
 
 ul.tabs li a{
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-size: 16px;
     text-align: center;
+    
     display: block;
     padding: 20px 0px;
+
 }
 
 .active{
@@ -52,14 +58,36 @@ ul.tabs li a .tab-text{
 
 .secciones{
     width: 100%;
-    background: #fff;
+    background: white;
 }
 .secciones article{
     padding: 30px;
 }
-.secciones article p{
+.secciones article{
+    width: 100% ;
+    padding: 2%;
     text-align: justify;
 }
+
+/*css contenido*/
+h3{
+    color: white;
+    text-decoration: none;
+    background: #0984cc;
+    padding: 2px;
+    margin-top: 1%;
+    margin-bottom: 1% ;
+    padding: 2%;
+
+}
+
+p,h4{
+    width: 100%; 
+    background: #e7e7e7;
+    padding-left: 1%;
+}
+
+/*parte responsive*/
 
 @media screen and (max-width: 700px){
     ul.tabs li{
